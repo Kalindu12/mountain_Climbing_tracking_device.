@@ -1,3 +1,10 @@
 # Mountain Climber Tracking Device
 
 This is the complete discription of creating, testing and working process of mountain climbing tracking device
+
+
+This project aims to provide a protective and secure system for climbers who traverse long distances in mountains. Climbers often face health and accident-related challenges during their climb, which necessitate timely and accurate information. Additionally, they may require advanced communication systems to seek assistance from relief groups, even in areas with poor signal conditions. It is also essential to ensure the safety of relief groups, so environmental conditions must be taken into account.
+
+To address these challenges, we have developed a hardware device that can be worn as a backpack. In its current stage, the device can measure the climber's heartbeat level and determine if it falls within a healthy range. If the level becomes too low or high without the climber's knowledge, the device sends out a danger signal. If the climber requires help from relief teams, the device automatically sends their heartbeat level, location, and environmental conditions, such as temperature and humidity, to the rescue team. Alternatively, if the climber can manage the situation without assistance, they can stop the device from sending out a distress message.
+
+One of the most significant features of this device is its ability to work in areas with poor signal levels. In future iterations of the project, we aim to incorporate measurement of blood oxygen levels and body temperature. These measurements will provide a clearer understanding of the climber's physical health status, enabling the device to send accurate danger signals to the climber and ground team. Moreover, we plan to include satellite connectivity to maintain communication between climbers and ground personnel. The Starlink project could be instrumental in achieving this goal
