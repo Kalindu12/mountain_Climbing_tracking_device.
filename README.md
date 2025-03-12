@@ -1,10 +1,53 @@
 # Mountain Climber Tracking Device
 
-This is the complete discription of creating, testing and working process of mountain climbing tracking device
+## Overview
+This project aims to provide a protective and secure system for mountain climbers who traverse long distances in challenging terrains. Climbers often face health and accident-related risks, requiring timely and accurate information. Additionally, poor signal conditions in remote areas make it difficult to seek assistance from relief groups. This tracking device is designed to address these challenges by ensuring the safety of climbers and rescue teams through real-time health monitoring and communication features.
+
+## Features
+- **Health Monitoring:**
+  - Tracks the climber's heartbeat level and alerts if it falls outside the healthy range.
+  - Sends a danger signal if an abnormal heartbeat is detected without the climber's knowledge.
+  
+- **Emergency Assistance:**
+  - Automatically transmits the climber's heartbeat level, location, and environmental conditions (temperature and humidity) to the rescue team if help is needed.
+  - Allows climbers to manually stop distress signals if they can manage the situation independently.
+  
+- **Connectivity in Remote Areas:**
+  - Designed to work in areas with poor signal reception.
+  - Future plans include integrating satellite connectivity (e.g., Starlink) for seamless communication.
+  
+- **Future Enhancements:**
+  - Blood oxygen level and body temperature monitoring for better health assessment.
+  - Improved communication and data transmission technologies.
+
+## Hardware & Technologies Used
+- **Sensors:** Heartbeat sensor, temperature sensor, humidity sensor, GPS module
+- **Communication Module:** LoRaWAN, Satellite connectivity (planned for future versions)
+- **Microcontroller:** Arduino / Raspberry Pi
+- **Power Supply:** Rechargeable battery with solar charging capability (if applicable)
+
+## Installation & Usage
+1. **Hardware Setup:**
+   - Assemble the sensors and microcontroller into the wearable device (e.g., backpack-mounted system).
+   - Ensure proper connectivity between sensors and the processing unit.
+
+2. **Software Configuration:**
+   - Upload the firmware to the microcontroller using Arduino IDE / Python.
+   - Configure the emergency signal transmission settings.
+
+3. **Testing & Deployment:**
+   - Test the device in controlled environments before field deployment.
+   - Verify signal transmission, heartbeat monitoring, and environmental condition reporting.
+
+## Future Goals
+- Enhance real-time tracking with improved GPS accuracy.
+- Develop a mobile application for climbers and rescue teams.
+- Implement AI-based risk prediction based on collected health and environmental data.
 
 
-This project aims to provide a protective and secure system for climbers who traverse long distances in mountains. Climbers often face health and accident-related challenges during their climb, which necessitate timely and accurate information. Additionally, they may require advanced communication systems to seek assistance from relief groups, even in areas with poor signal conditions. It is also essential to ensure the safety of relief groups, so environmental conditions must be taken into account.
 
-To address these challenges, we have developed a hardware device that can be worn as a backpack. In its current stage, the device can measure the climber's heartbeat level and determine if it falls within a healthy range. If the level becomes too low or high without the climber's knowledge, the device sends out a danger signal. If the climber requires help from relief teams, the device automatically sends their heartbeat level, location, and environmental conditions, such as temperature and humidity, to the rescue team. Alternatively, if the climber can manage the situation without assistance, they can stop the device from sending out a distress message.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-One of the most significant features of this device is its ability to work in areas with poor signal levels. In future iterations of the project, we aim to incorporate measurement of blood oxygen levels and body temperature. These measurements will provide a clearer understanding of the climber's physical health status, enabling the device to send accurate danger signals to the climber and ground team. Moreover, we plan to include satellite connectivity to maintain communication between climbers and ground personnel. The Starlink project could be instrumental in achieving this goal
+
+
